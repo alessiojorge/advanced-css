@@ -1,5 +1,5 @@
 import React from 'react';
-import './Button.css';
+import './Button.scss';
 
 import classnames from 'classnames';
 
@@ -7,7 +7,7 @@ const button = props => {
   return (
     <a
       className={classnames('btn', props.type, {
-        'btn-animated': props.animated
+        'btn--animated': props.animated
       })}
       href={props.href}
     >

@@ -1,26 +1,26 @@
 import React from 'react';
-import './Header.css';
+import './Header.scss';
 
 import { Button } from '../UI/index';
 
 const header = () => {
   return (
     <div className="header">
-      <div className="logo-box">
+      <div className="header__logo-box">
         <img
           src={require('../../assets/logo-white.png')}
           alt="Logo"
-          className="logo"
+          className="header__logo"
         />
       </div>
 
-      <div className="text-box">
+      <div className="header__text-box">
         <h1 className="header-primary">
-          <span className="header-primary-main">Outdoors</span>
-          <span className="header-primary-sub">is where life happens</span>
+          <span className="header-primary--main">Outdoors</span>
+          <span className="header-primary--sub">is where life happens</span>
         </h1>
 
-        <Button type="btn-white" href="#" text="Discover our tours" animated />
+        <Button type="btn--white" href="#" text="Discover our tours" animated />
       </div>
     </div>
   );
