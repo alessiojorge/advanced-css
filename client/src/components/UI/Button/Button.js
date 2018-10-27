@@ -1,5 +1,5 @@
 import React from 'react';
-import './Button.scss';
+import './_button.scss';
 
 import classnames from 'classnames';
 

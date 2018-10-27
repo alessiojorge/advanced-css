@@ -1,5 +1,5 @@
 import React from 'react';
-import './Header.scss';
+import './_header.scss';
 
 import { Button } from '../UI/index';
 
