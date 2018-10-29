@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.scss';
 
-import { Header, About } from '../components/index';
+import { Header, About, Features } from '../components/index';
 
 class App extends Component {
   render() {
@@ -11,6 +11,7 @@ class App extends Component {
 
         <main>
           <About />
+          <Features />
         </main>
       </div>
     );
