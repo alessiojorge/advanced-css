@@ -5,7 +5,7 @@ import { Button } from '../UI/index';
 
 const header = () => {
   return (
-    <div className="header">
+    <header className="header">
       <div className="header__logo-box">
         <img
           src={require('../../assets/logo-white.png')}
@@ -22,7 +22,7 @@ const header = () => {
 
         <Button type="btn--white" href="#" text="Discover our tours" animated />
       </div>
-    </div>
+    </header>
   );
 };
 

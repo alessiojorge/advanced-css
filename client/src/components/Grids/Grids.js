@@ -1,7 +1,7 @@
 import React from 'react';
 import './_grids.scss';
 
-const grids = () => {
+const grids = props => {
   return (
     <section className="grids">
       <div className="row">
