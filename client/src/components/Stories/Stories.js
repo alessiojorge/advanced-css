@@ -12,9 +12,9 @@ const stories = () => {
       <div className="bg-video">
         <video
           className="bg-video__content"
-          autoplay="true"
-          muted="true"
-          loop="true"
+          autoPlay={true}
+          muted={true}
+          loop={true}
         >
           <source src={require('../../assets/video.mp4')} type="video/mp4" />
           <source src={require('../../assets/video.webm')} type="video/webm" />

@@ -1,7 +1,14 @@
 import React, { Component } from 'react';
 import './App.scss';
 
-import { Header, About, Features, Tours, Stories } from '../components/index';
+import {
+  Header,
+  About,
+  Features,
+  Tours,
+  Stories,
+  Booking
+} from '../components/index';
 
 class App extends Component {
   render() {
@@ -14,6 +21,7 @@ class App extends Component {
           <Features />
           <Tours />
           <Stories />
+          <Booking />
         </main>
       </div>
     );
