@@ -5,5 +5,6 @@ import Features from './Features/Features';
 import Tours from './Tours/Tours';
 import Stories from './Stories/Stories';
 import Booking from './Booking/Booking';
+import Footer from './Footer/Footer';
 
-export { Header, Grids, About, Features, Tours, Stories, Booking };
+export { Header, Grids, About, Features, Tours, Stories, Booking, Footer };

@@ -7,7 +7,8 @@ import {
   Features,
   Tours,
   Stories,
-  Booking
+  Booking,
+  Footer
 } from '../components/index';
 
 class App extends Component {
@@ -23,6 +24,8 @@ class App extends Component {
           <Stories />
           <Booking />
         </main>
+
+        <Footer />
       </div>
     );
   }
