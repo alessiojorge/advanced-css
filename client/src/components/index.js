@@ -1,4 +1,5 @@
 import Navigation from './Navigation/Navigation';
+import Popup from './Popup/Popup';
 import Header from './Header/Header';
 import Grids from './Grids/Grids';
 import About from './About/About';
@@ -10,6 +11,7 @@ import Footer from './Footer/Footer';
 
 export {
   Navigation,
+  Popup,
   Header,
   Grids,
   About,

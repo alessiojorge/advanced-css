@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import './App.scss';
 
 import {
   Navigation,
+  Popup,
   Header,
   About,
   Features,
@@ -17,6 +17,7 @@ class App extends Component {
     return (
       <div className="app">
         <Navigation />
+        <Popup />
         <Header />
 
         <main>

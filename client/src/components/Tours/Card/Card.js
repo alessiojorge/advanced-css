@@ -47,7 +47,7 @@ const card = props => {
             <p className="card__price-value">{props.price}</p>
           </div>
 
-          <Button type="btn--white" href="#" text="Book Now!" />
+          <Button type="btn--white" href="#popup" text="Book Now!" />
         </div>
       </div>
     </div>
