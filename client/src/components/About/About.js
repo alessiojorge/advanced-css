@@ -6,7 +6,7 @@ import { Button, Composition } from '../UI/index';
 
 const about = () => {
   return (
-    <section className="section-about">
+    <section className="section-about" id="about">
       <div className="u-center-text u-margin-bottom-big">
         <h2 className="heading-secondary">
           Exciting tours for adventurous people

@@ -8,7 +8,7 @@ const footer = () => {
         <img
           src={require('../../assets/logo-green-2x.png')}
           alt="Full logo"
-          class="footer__logo"
+          className="footer__logo"
         />
       </div>
 

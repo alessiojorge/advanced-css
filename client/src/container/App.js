@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.scss';
 
 import {
+  Navigation,
   Header,
   About,
   Features,
@@ -15,6 +16,7 @@ class App extends Component {
   render() {
     return (
       <div className="app">
+        <Navigation />
         <Header />
 
         <main>
