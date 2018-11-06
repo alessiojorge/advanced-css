@@ -14,6 +14,11 @@
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
 
+  @include respond(phone) {
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+  }
+
   &__logo-box {
     position: absolute;
     top: 4rem;
@@ -29,29 +34,5 @@
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-  }
-}
-
-.header-primary {
-  color: white;
-  text-transform: uppercase;
-  margin-bottom: 6rem;
-  backface-visibility: hidden;
-  /* Must add in container behind animation */
-
-  &--main {
-    display: block;
-    font-size: 6rem;
-    font-weight: 400;
-    letter-spacing: 3.5rem;
-    animation: moveInLeft 1s ease-out;
-  }
-
-  &--sub {
-    display: block;
-    font-size: 2rem;
-    font-weight: 400;
-    letter-spacing: 1.74rem;
-    animation: moveInRight 1s ease-out;
   }
 }

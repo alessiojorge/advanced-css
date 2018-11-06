@@ -1,17 +1,14 @@
 @import '../../../sass/main.scss';
-
 .card {
   //  FUNCTIONALITY
   perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative;
   height: 52rem;
-
   &__side {
     font-size: 2rem;
     height: 52rem;
     transition: all 0.8s ease;
-
     position: absolute;
     top: 0;
     left: 0;
@@ -20,14 +17,11 @@
     border-radius: 2px;
     overflow: hidden;
     box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
-
     &--front {
       background-color: white;
     }
-
     &--back {
       transform: rotateY(180deg);
-
       &-1 {
         background-image: linear-gradient(
           to right bottom,
@@ -163,5 +157,44 @@
   &__price-value {
     font-size: 6rem;
     font-weight: 300;
+  }
+  @include respond(tab-port) {
+    height: auto;
+    border-radius: 2px;
+    background-color: $color-white;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+    &__side {
+      height: auto;
+      position: relative;
+      box-shadow: none;
+      &--back {
+        -wekbit-clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+        clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+        transform: rotateY(0deg);
+      }
+    }
+    &:hover &__side--front {
+      transform: rotateY(0deg);
+    }
+    &:hover &__side--back {
+      transform: rotateY(0deg);
+    } // FRONT SIDE STYLING
+    &__details {
+      padding: 1rem 3rem;
+    }
+    &__cta {
+      position: relative;
+      top: 0%;
+      left: 0%;
+      transform: translate(0);
+      width: 100%;
+      padding: 7rem 4rem 4rem 4rem;
+    }
+    &__price-box {
+      margin-bottom: 3rem;
+    }
+    &__price-value {
+      font-size: 4rem;
+    }
   }
 }
